@@ -1,11 +1,18 @@
 <script lang="ts">
-	import favicon from '$lib/assets/favicon.svg';
+  import { onMount } from 'svelte';
+  import '../app.css';
+  import Navbar from '$lib/components/Navbar.svelte';
+  import Footer from '$lib/components/Footer.svelte';
+  import { theme } from '$lib/theme.svelte';
 
-	let { children } = $props();
+  let { children } = $props();
+
+  onMount(() => theme.init());
 </script>
 
-<svelte:head>
-	<link rel="icon" href={favicon} />
-</svelte:head>
+<div id="stars" class="fixed inset-0 pointer-events-none z-0"></div>
+<div id="glows" class="fixed inset-0 pointer-events-none z-0"></div>
 
+<Navbar />
 {@render children()}
+<Footer />

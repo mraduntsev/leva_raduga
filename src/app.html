@@ -1,12 +1,27 @@
 <!doctype html>
-<html lang="en">
-	<head>
-		<meta charset="utf-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1" />
-		<meta name="text-scale" content="scale" />
-		%sveltekit.head%
-	</head>
-	<body data-sveltekit-preload-data="hover">
-		<div style="display: contents">%sveltekit.body%</div>
-	</body>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>ЛЁВА РАДУГА — геймер, ютубер и твой тиммейт по учёбе</title>
+    <meta name="description" content="Помогу с математикой, информатикой, видеоконтентом и нейросетями. Без скуки — на языке игр и мемов." />
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🎮</text></svg>" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/fontsource/css/russo-one@latest/cyrillic-400.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/fontsource/css/russo-one@latest/latin-400.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/fontsource/css/press-start-2p@latest/cyrillic-400.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/fontsource/css/press-start-2p@latest/latin-400.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/fontsource/css/rubik@latest/cyrillic-400.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/fontsource/css/rubik@latest/cyrillic-500.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/fontsource/css/rubik@latest/cyrillic-700.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/fontsource/css/rubik@latest/cyrillic-900.css" />
+    <script>
+      try {
+        if (localStorage.getItem('lr-theme') === 'light') document.documentElement.classList.add('light');
+      } catch (e) {}
+    </script>
+    %sveltekit.head%
+  </head>
+  <body data-sveltekit-preload-data="hover" class="font-body">
+    <div style="display: contents">%sveltekit.body%</div>
+  </body>
 </html>
